@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 기본 요소 테스트 페이지</title>
+</head>
+<body>
+    <div style="padding: 5%;">
+        <h1>HtML 기본 요소 테스트 페이지</h1>
+        <br>
+        <div>
+            <a href="#intro">소개</a><span> | </span><a href="#catg">목록</a><span> | </span><a href="#survey">설문조사</a><span> | </span><a href="#member">팀원정보</a>
+            <hr>
+        </div>
+        <!-- &nbsp;|&nbsp;목록&nbsp;|&nbsp;설문조사&nbsp;|&nbsp;팀원정보</a> -->
+        <div>
+            <h2 id="intro">소개</h2>
+            <p>이 페이지는 HTML의 자주 사용하는 태그들을 테스트하기 위해 만들어졌습니다.</p>
+            <hr>
+        </div>
+        <h2 id="catg">목록 테스트</h2>
+        <h3>순서 있는 목록(ol)</h3>
+            <ol>
+                <li>HTML배우기</li>
+                <li>CSS배우기</li>
+                <li>JavaScript배우기</li>
+            </ol>
+        <h3>순서 없는 목록(ul)</h3>
+            <ul>
+                <li>노트북</li>
+                <li>키보드</li>
+                <li>마우스</li>
+            </ul>
+        <hr>
+        <h2 id="survey">설문조사 폼</h2>
+            <label for="">이름: </label>
+            <input type="text" name="" id=""><br>
+            <br>
+            <label for="">이메일: </label>
+            <input type="text"><br>
+            <h3>1. 좋아하는 과일을 선택하세요(체크박스)</h3>
+                <input type="checkbox" name="fruit1" value="apple">사과<br>
+                <input type="checkbox" name="fruit2" value="banana">바나나<br>
+                <input type="checkbox" name="fruit3" value="grape">포도<br>
+            <h3>2. 선호하는 개발 언어는 무엇인가요?(라디오 버튼)</h3>
+                <input type="radio" name="lang1" value="HTML">HTML<br>
+                <input type="radio" name="lang2" value="CSS">CSS<br>
+                <input type="radio" name="lang3" value="JavaScript">JavaScript<br>
+                <br>
+                <label for="">의견: </label><br>
+                <textarea name="" id="" rows="10", cols="30"></textarea><br>
+                <input type="submit">
+        <hr>
+        <h2 id="member">팀원 정보 표</h2>
+            <table border="1px" style="margin: 0auto;">
+                <caption style="caption-side: top; text-align: center;">
+                    프로젝트 팀원 목록
+                </caption>
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>역할</th>
+                        <th>이메일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>홍길동</td>
+                        <td>프론트엔드</td>
+                        <td>hong@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>김영희</td>
+                        <td>백엔드</td>
+                        <td>kim@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>이철수</td>
+                        <td>디자인</td>
+                        <td>lee@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        <hr>
+        <span> ©2025 HTML 테스트페이지 | 문의: test@example.com</span>
+        
+
+    </div>
+
+</body>
+</html>
