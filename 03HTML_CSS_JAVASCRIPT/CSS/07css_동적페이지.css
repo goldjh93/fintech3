@@ -1,0 +1,128 @@
+/* 콘텐츠 모양을 자유롭게 변형하기 */
+
+section{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 50px;
+}
+
+section article{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    opacity: 0.3;
+}
+
+/* scale 확대 축소 */
+/* 1은 원래 크기보다 1조가 작으면 축소, 크면 확대 */
+
+#transform section:nth-child(1) article{
+    transform: scale(1.2);
+}
+
+/* 20도 만큼 비틀기 */
+#transform section:nth-child(2) article{
+    transform: skewY(20deg);
+}
+
+/* 요소 이동 */
+/* translate 왼쪽 오른쪽 이동 */
+/* translateY 상하 이동 */
+#transform section:nth-child(3) article{
+    /* transform: translateY(50px); */
+    transform: translate(50px);
+}
+
+/* 요소를 회전 rotate deg*/
+#transform section:nth-child(4) article{
+    transform: rotate(45deg);
+}
+
+/* rotatex */
+#transform section:nth-child(5) article{
+    transform: rotatex(45deg);
+}
+
+/* rotatey */
+#transform section:nth-child(6) article{
+    transform: rotatey(45deg);
+}
+
+/* 콘텐츠 모양을 자유롭게 변형하기2 */
+
+#transform2 section {
+    perspective: 400px;
+}
+
+/* rotatex */
+#transform2 section:nth-child(1) article{
+    transform: rotatex(45deg);
+}
+
+/* rotatey */
+#transform2 section:nth-child(2) article{
+    transform: rotatey(45deg);
+}
+
+#transform2 section:nth-child(3) article{
+    transform: translateZ(100px);
+}
+
+#transform2 section:nth-child(4) article{
+    transform: translateZ(-100px);
+}
+
+
+/* transition으로 전환효과 적용하기 */
+
+#transition .red_box{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin-bottom: 10px;
+}
+
+#transition .red_box:hover {
+    background-color: blue;
+    transition-duration: 5s;
+    transition-delay: 1s;
+}
+
+.container .bar{
+    width: 10px;
+    border:1px solid black;
+
+    background-color: gray;
+    color: white;
+    transition-property: width;
+    transition-duration: 5s;
+    margin-bottom: 10px;
+}
+
+.container:hover .bar:hover {
+    width: 220px;
+    background-color: blue;
+}
+.bar:nth-child(1){
+    transition-timing-function: linear;
+}
+
+.bar:nth-child(2){
+    transition-timing-function: ease;
+}
+
+.bar:nth-child(3){
+    transition-timing-function: ease-in;
+}
+
+.bar:nth-child(4){
+    transition-timing-function: ease-out;
+}
+
+.bar:nth-child(5){
+    transition-timing-function: ease-in-out;
+}

@@ -18,8 +18,8 @@
 */
 /* rem: html에 정의돈 기본 크기에 비례
     html 기본 폰트가 16px 일때
-    2rem -> 32px
-*/
+    2rem -> 32px */
+
 
 #font_size > article> h1 {
     font-size: 60px;
