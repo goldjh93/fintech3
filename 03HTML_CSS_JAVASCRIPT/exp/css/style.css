@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/* 브라우저 기본 여백 제거 + 박스 사이징 통일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 페이지 배경/기본 글자색 */
+body {
+  background-color: #f8fafc; /* --bg */
+  color: #0f172a;            /* --text */
+  margin: 0 auto;
+  height: 5000px;
+}
+
+/* ========== Header ======================================================== */
+
+/* 상단 컨테이너 */
+header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+/* 이름 타이틀 */
+header h1 {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* 소개 문구 */
+header p {
+  font-size: 1.5rem;
+  color: #475569; /* --muted */
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ========== Main Layout =================================================== */
+
+/* 2컬럼 메인 래퍼: flex 기반 */
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* 내부 div: 세로 배치 + gap */
+.main > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 좌측 컬럼: 소개/취미 */
+.col_left {
+  flex-grow:2;
+  flex-shrink: 1;
+  flex-basis: 0; 
+}
+
+/* 우측 컬럼: 연락/링크 */
+.col_right {
+  flex-grow:1;
+  flex-shrink: 1;
+  flex-basis: 0; 
+}
+
+/* ========== Section Card ================================================== */
+
+/* 공통 카드 스타일 */
+section {
+  background-color: #ffffff; /* --surface */
+  border: 1px solid #e2e8f0; /* --border */
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06); /* --shadow */
+}
+
+/* 섹션 제목 */
+section h1 {
+  font-size: 1.7rem;
+}
+
+/* 자기소개 전용: 최소 높이 확보 */
+#intro {
+  min-height: 200px;
+}
+
+/* 자기소개 본문 */
+#intro > p {
+  font-size: 1.2rem;
+}
+
+/* 연락처 박스 */
+#contact {
+  grid-area: contact; /* grid 활용 여지 */
+  min-height: 200px;
+}
+
+/* ========== Lists ========================================================= */
+
+ul {
+  margin-top: 15px;
+  margin-bottom: 12px;
+  margin-left: 25px;
+}
+
+li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+/* ========== Footer ======================================================== */
+
+footer {
+  text-align: center;
+  color: #64748b;
+  padding: 24px 0 40px;
+  font-size: 14px;
+}

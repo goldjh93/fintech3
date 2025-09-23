@@ -1,0 +1,67 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#cdd8e4 ;
+}
+
+
+.container{
+    display: grid;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: white;
+    grid-template-columns: 200px 200px 200px ;
+    grid-template-rows: 200px 200px 200px;
+    row-gap: 10px;
+    column-gap: 10px;
+
+
+
+
+}
+
+.grid-item{
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container div:first-child{
+    background-image: url(../img/ann-danilina-VYNBNs_wKO4-unsplash.jpg);
+}
+
+.container div:nth-child(2){
+    background-image: url(../img/ann-danilina-Y2JQGXUM1iU-unsplash.jpg);
+}
+.container div:nth-child(3){
+    background-image: url(../img/jet-dela-cruz-AOI_fg7A28w-unsplash.jpg);
+}
+
+.container div:nth-child(4){
+    background-image: url(../img/luminos-film-wcXBNPID69k-unsplash.jpg);
+}
+
+.container div:nth-child(5){
+    background-image: url(../img/ming-han-low-xjAxyiqDqu0-unsplash.jpg);
+}
+
+.container div:nth-child(6){
+    background-image: url(../img/pan-zhen-Hvjx3cywvM4-unsplash.jpg);
+}
+
+.container div:nth-child(7){
+    background-image: url(../img/ping-onganankun-5htrsUUbFGI-unsplash.jpg);
+}
+
+.container div:nth-child(8){
+    background-image: url(../img/zequn-gui-IlZy859SWN8-unsplash.jpg);
+}
+
+.container div:last-child{
+    background-image: url(../img/alexandre-trouve-Via0Hy2rYIc-unsplash.jpg);
+}
